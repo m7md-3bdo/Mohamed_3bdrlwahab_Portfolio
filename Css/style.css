@@ -1,0 +1,1284 @@
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* <!----------------------sec home---------------------> */
+
+#sec1{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.462);
+    background-image: url(../Images/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sec1 nav{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 20px;
+    position: sticky;
+    top: 0;
+}
+
+#sec1 nav .logo{
+    margin-left: 100px;
+    color: rgba(218, 165, 32, 0.804);
+    
+}
+
+#sec1 nav .links{
+    margin-right: 100px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#sec1 nav .links ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+#sec1 nav .links a{
+    text-decoration: none;
+    color: white;
+}
+
+#sec1 nav .links a:hover{
+    color: rgba(218, 165, 32, 0.804);
+}
+
+
+#sec1 .hero{
+    margin-left: 200px;
+    margin-top: 200px;
+    color: white;
+}
+
+
+#sec1 .hero h4{
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(218, 165, 32, 0.804);
+}
+
+#sec1 .hero h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: normal;
+    color: white;
+}
+
+#sec1 .hero p{
+    color: rgba(181, 180, 180, 0.753);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+
+
+/* ================= ABOUT SECTION ================= */
+
+#sec2 {
+    min-height: 100vh;
+    background: #ffffff;
+   
+}
+
+.about-container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* ================= IMAGE SIDE ================= */
+
+.about-img {
+    width: 30%;
+    border: 5px solid #555555;
+    border-radius: 15px;
+    height: 500px;
+    position: relative;
+    top: 150px;
+}
+
+.image-container {
+    width: 110%;
+    height: 500px;
+    position: absolute;
+
+    left: 55px;
+    top: 55px;
+
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+
+/* الصورة نفسها */
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    display: block;
+    
+}
+
+
+/* ================= OVERLAY ================= */
+
+.overlay-layer {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateY(100%);
+    transition: 0.5s;
+}
+
+
+/* الـ Hover على الصورة نفسها */
+
+.image-container:hover .overlay-layer {
+    transform: translateY(0);
+}
+
+
+/* ================= SOCIAL ICONS ================= */
+
+.about-icons {
+    display: flex;
+    gap: 25px;
+}
+
+.about-icons a {
+    text-decoration: none;
+}
+
+.about-icons .icons {
+    color: white;
+    font-size: 20px;
+
+    transition: 0.3s;
+}
+
+.about-icons .icons:hover {
+    color: goldenrod;
+}
+
+
+/* ================= ABOUT CONTENT ================= */
+
+.about-content {
+    width: 50%;
+    margin-top: 200px;
+}
+
+.about-content .layer {
+    width: 100%;
+}
+
+.about-content h2 {
+    font-family: Arial, sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    color: #333333;
+
+    margin-bottom: 20px;
+}
+
+.about-content h2::before {
+    content: "";
+
+    display: inline-block;
+
+    width: 5px;
+    height: 30px;
+
+    background: rgb(241, 182, 32);
+
+    margin-right: 10px;
+}
+
+
+/* paragraph */
+
+.about-caption {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #555555;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+.about-caption .caption-container .caption-one p{
+    font-size: 20px;
+    color: gold;
+}
+
+
+/* الخط */
+
+.about-caption br {
+    display: none;
+}
+
+
+/* ================= INFO ================= */
+
+.caption-container {
+    border-top: 1px dashed #555555;
+    padding-top: 20px;
+}
+
+.caption {
+    display: flex;
+    justify-content: space-between;
+}
+
+.caption-one,
+.caption-two {
+    width: 48%;
+}
+
+.caption-paragraph {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #555555;
+
+    margin-bottom: 20px;
+}
+
+.caption-text {
+    color: #333333;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.about-section-button {
+    background: goldenrod;
+    color:black;
+    width: 200px;
+    height: 50px;
+
+    border: none;
+    border-radius: 4px;
+
+    padding: 12px 25px;
+
+    font-size: 14px;
+
+    margin-right: 8px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.about-section-button i {
+    margin-left: 8px;
+}
+
+.about-section-button:hover {
+    background: black;
+    color:  rgb(182, 137, 21);
+    cursor: pointer;
+}
+
+
+/* ----------------------sec 3--------------------------------------------*/
+
+#sec3{
+    height: 70vh;
+    margin-top: 150px;
+    background-color: #f5f5f5;
+}
+
+#sec3 .header{
+    text-align: center;
+    padding-block: 80px;
+    font-size: 24px;
+    
+}
+
+#sec3 .container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+}
+
+#sec3 .container div{
+    width: 25%;
+    height: 120px;
+    text-align: center;
+    transition: all .5s;
+    padding: 30px;
+    margin-inline: 30px;
+    border-radius: 10px;
+}
+
+#sec3 .container div:hover{
+    transform: scale(1.15);
+    background-color:rgba(218, 158, 7, 0.162) ;
+}
+
+
+#sec3 .container div i{
+    color: rgb(218, 158, 7);
+    margin-bottom: 15px;
+}
+
+#sec3 .container div p{
+    font-weight: 300;
+    color: #555555;
+
+}
+/* ---------------------------sec 4---------------------------------------- */
+
+
+/* ================= SECTION 4 ================= */
+
+#sec4 {
+    background: white;
+    padding: 100px 0;
+}
+
+
+/* ================= TITLE ================= */
+
+#sec4 .portfolio-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#sec4 .portfolio-title h2 {
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #222222;
+    margin-bottom: 15px;
+}
+
+#sec4 .portfolio-title p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+
+/* ================= TITLE LINES ================= */
+
+#sec4 .title-lines {
+    width: 180px;
+    height: 12px;
+    margin: auto;
+    position: relative;
+}
+
+#sec4 .title-lines::before {
+    content: "";
+
+    position: absolute;
+
+    width: 70px;
+    height: 1px;
+
+    background: goldenrod;
+
+    left: 55px;
+    top: 0;
+}
+
+#sec4 .title-lines span {
+    display: block;
+
+    width: 40px;
+    height: 1px;
+
+    background: goldenrod;
+
+    position: absolute;
+
+    left: 70px;
+    top: 5px;
+}
+
+
+/* ================= PROJECTS CONTAINER ================= */
+
+#sec4 .projects-container {
+    width: 85%;
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 25px;
+}
+
+
+/* ================= PROJECT CARD ================= */
+
+#sec4 .project-card {
+    width: 33.333%;
+
+    background: white;
+
+    border-radius: 6px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+
+
+#sec4 .project-card:nth-child(2) {
+    margin-top: 35px;
+}
+
+
+/* ================= IMAGE ================= */
+
+#sec4 .project-image {
+    width: 100%;
+    height: 330px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #eeeeee;
+}
+
+#sec4 .project-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.5s;
+}
+
+
+/* ================= OVERLAY ================= */
+
+#sec4 .project-overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.78);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    opacity: 0;
+
+    transition: 0.5s;
+}
+
+
+/* ================= HOVER ================= */
+
+#sec4 .project-image:hover .project-overlay {
+    opacity: 1;
+}
+
+#sec4 .project-image:hover img {
+    transform: scale(1.08);
+}
+
+
+/* ================= PROJECT TITLE ================= */
+
+#sec4 .project-overlay h3 {
+    font-family: Arial, sans-serif;
+
+    font-size: 25px;
+
+    font-weight: 600;
+
+    color: goldenrod;
+
+    margin-bottom: 15px;
+
+    transform: translateY(20px);
+
+    transition: 0.5s;
+}
+
+
+/* ================= PROJECT DESCRIPTION ================= */
+
+#sec4 .project-overlay p {
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    color: #eeeeee;
+
+    line-height: 1.6;
+
+    max-width: 300px;
+
+    margin-bottom: 20px;
+
+    transform: translateY(20px);
+
+    transition: 0.5s;
+}
+
+
+/* ================= PROJECT BUTTON ================= */
+
+#sec4 .project-overlay a {
+    text-decoration: none;
+
+    background: goldenrod;
+
+    color: black;
+
+    padding: 12px 24px;
+
+    border-radius: 4px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+    transform: translateY(20px);
+}
+
+
+/* ================= CONTENT ANIMATION ================= */
+
+#sec4 .project-image:hover .project-overlay h3,
+#sec4 .project-image:hover .project-overlay p,
+#sec4 .project-image:hover .project-overlay a {
+
+    transform: translateY(0);
+}
+
+
+/* ================= BUTTON HOVER ================= */
+
+#sec4 .project-overlay a:hover {
+
+    background: black;
+
+    color: goldenrod;
+}
+
+
+/* ================= CARD HOVER ================= */
+
+#sec4 .project-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ================= SECTION 5 - STATS ================= */
+
+#sec5 {
+    background: #111111;
+    padding: 30px 0;
+}
+
+.stats-container {
+    width: 85%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.stat {
+    width: 23%;
+    padding: 30px 15px;
+
+    border-right: 1px solid #333;
+}
+
+.stat:last-child {
+    border-right: none;
+}
+
+.stat i {
+    font-size: 30px;
+    color: goldenrod;
+    margin-bottom: 15px;
+}
+
+.stat h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    color: white;
+    margin: 5px 0;
+}
+
+.stat p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #999;
+}
+
+.stat {
+    transition: 0.3s;
+}
+
+.stat:hover {
+    transform: translateY(-8px);
+}
+
+.stat:hover i {
+    color: white;
+}
+
+/* ================= SECTION 6 ================= */
+
+#sec6 {
+    background: #f7f7f7;
+    padding: 100px 0;
+}
+
+
+
+#sec6 .section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#sec6 .section-title span {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: goldenrod;
+}
+
+#sec6 .section-title h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 38px;
+    color: #111;
+    margin: 10px 0;
+}
+
+#sec6 .section-title p {
+    font-family: "Open Sans", sans-serif;
+    color: #777;
+}
+
+
+
+
+.journey-card {
+    width: 75%;
+    margin: auto;
+
+    background: #111;
+    border-radius: 8px;
+
+    padding: 45px;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+
+
+.journey-card::before {
+    content: '';
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 6px;
+    height: 100%;
+
+    background: goldenrod;
+}
+
+
+
+
+.journey-icon {
+    min-width: 80px;
+    height: 80px;
+
+    border: 1px solid goldenrod;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 30px;
+}
+
+.journey-icon i {
+    font-size: 28px;
+    color: goldenrod;
+}
+
+
+
+
+.journey-content {
+    flex: 1;
+}
+
+.journey-content h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.journey-content p {
+    font-family: "Open Sans", sans-serif;
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.8;
+
+    max-width: 750px;
+}
+
+
+
+
+.skills {
+    margin-top: 20px;
+}
+
+.skills span {
+    display: inline-block;
+
+    color: goldenrod;
+    border: 1px solid goldenrod;
+
+    padding: 6px 14px;
+
+    margin-right: 7px;
+
+    border-radius: 20px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+}
+
+
+
+
+.journey-number {
+    font-family: "Poppins", sans-serif;
+
+    font-size: 55px;
+    font-weight: 700;
+
+    color: #ffffff15;
+
+    margin-left: 30px;
+}
+
+
+/* ================= CONTACT ================= */
+
+#sec7 {
+    background: #f7f7f7;
+    padding: 100px 0;
+}
+
+
+/* ---------- TITLE ---------- */
+
+#sec7 .contact-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#sec7 .contact-title span {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: goldenrod;
+}
+
+#sec7 .contact-title h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 38px;
+    color: #111;
+    margin: 10px 0;
+}
+
+#sec7 .contact-title p {
+    font-family: "Open Sans", sans-serif;
+    color: #777;
+}
+
+
+/* ---------- CONTAINER ---------- */
+
+#sec7 .contact-container {
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 70px;
+}
+
+
+/* ---------- INFO ---------- */
+
+#sec7 .contact-info {
+    width: 35%;
+}
+
+#sec7 .contact-item {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 35px;
+}
+
+#sec7 .contact-item i {
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    background: #111;
+    color: goldenrod;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+
+    margin-right: 18px;
+}
+
+#sec7 .contact-item h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+
+    color: #222;
+
+    margin-bottom: 5px;
+}
+
+#sec7 .contact-item p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+
+    color: #777;
+}
+
+
+/* ---------- FORM ---------- */
+
+#sec7 .contact-form {
+    width: 60%;
+}
+
+#sec7 .input-row {
+    display: flex;
+    gap: 20px;
+}
+
+#sec7 input,
+#sec7 textarea {
+
+    box-sizing: border-box;
+
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+    background: white;
+
+    outline: none;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+#sec7 .input-row input {
+    width: 50%;
+    height: 50px;
+
+    padding: 0 15px;
+}
+
+#sec7 .subject {
+    width: 100%;
+    height: 50px;
+
+    padding: 0 15px;
+
+    margin-top: 20px;
+}
+
+#sec7 textarea {
+    width: 100%;
+    height: 150px;
+
+    padding: 15px;
+
+    margin-top: 20px;
+
+    resize: none;
+}
+
+
+/* ---------- INPUT HOVER / FOCUS ---------- */
+
+#sec7 input:hover,
+#sec7 textarea:hover {
+    border-color: #bbb;
+}
+
+#sec7 input:focus,
+#sec7 textarea:focus {
+    border-color: goldenrod;
+}
+
+
+/* ---------- BUTTON ---------- */
+
+#sec7 button {
+    background: goldenrod;
+    color: black;
+
+    border: none;
+    border-radius: 4px;
+
+    padding: 14px 25px;
+
+    margin-top: 20px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#sec7 button i {
+    margin-left: 8px;
+}
+
+#sec7 button:hover {
+    background: #111;
+    color: goldenrod;
+}
+
+
+/* ================= FOOTER ================= */
+
+#footer {
+    background: #111;
+    padding: 60px 0 30px;
+
+    text-align: center;
+}
+
+#footer .footer-content h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+
+    color: white;
+
+    margin-bottom: 10px;
+}
+
+#footer .footer-content > p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+
+    color: #888;
+
+    margin-bottom: 25px;
+}
+
+
+/* ---------- ICONS ---------- */
+
+#footer .footer-icons {
+    display: flex;
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-bottom: 35px;
+}
+
+#footer .footer-icons a {
+    width: 40px;
+    height: 40px;
+
+    border: 1px solid #444;
+    border-radius: 50%;
+
+    color: goldenrod;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+#footer .footer-icons a:hover {
+    background: goldenrod;
+    color: #111;
+
+    border-color: goldenrod;
+
+    transform: translateY(-4px);
+}
+
+
+/* ---------- COPYRIGHT ---------- */
+
+#footer .copyright {
+    border-top: 1px solid #292929;
+
+    padding-top: 25px;
+
+    margin: 0 !important;
+
+    color: #666 !important;
+
+    font-size: 12px !important;
+}
+
+/* =====================================================
+   RESPONSIVE  /  ريسبونسيف
+   Breakpoints: 1024px (tablets/laptops) - 768px (tablets/large phones) - 480px (phones)
+   ===================================================== */
+
+/* ---------- 1024px : tablets & small laptops ---------- */
+@media (max-width: 1024px) {
+
+    /* --- nav --- */
+    #sec1 nav .logo{ margin-left: 40px; }
+    #sec1 nav .links{ margin-right: 40px; font-size: 16px; }
+    #sec1 nav .links ul{ gap: 15px; }
+
+    /* --- hero --- */
+    #sec1 .hero{ margin-left: 60px; margin-top: 160px; }
+    #sec1 .hero h1{ font-size: 34px; }
+
+    /* --- about --- */
+    .about-container{
+        flex-direction: column;
+        width: 90%;
+    }
+    .about-img{
+        width: 250px;
+        top: 0;
+        margin: 0 auto 40px;
+    }
+    .image-container{
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+    .about-content{
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+    }
+    .about-content h2::before{ display: none; }
+    .caption{ flex-direction: column; }
+    .caption-one, .caption-two{ width: 100%; }
+    .caption-container{ text-align: left; }
+
+    /* --- services (sec3) --- */
+    #sec3{ height: auto; padding-bottom: 40px; }
+    #sec3 .container{ flex-wrap: wrap; justify-content: center; }
+    #sec3 .container div{ width: 40%; margin-bottom: 30px; }
+
+    /* --- projects (sec4) --- */
+    #sec4 .projects-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    #sec4 .project-card{
+        width: 70%;
+        margin-bottom: 30px;
+    }
+    #sec4 .project-card:nth-child(2){ margin-top: 0; }
+
+    /* --- stats (sec5) --- */
+    .stats-container{ flex-wrap: wrap; }
+    .stat{
+        width: 50%;
+        border-right: none;
+        border-bottom: 1px solid #333;
+    }
+
+    /* --- journey (sec6) --- */
+    .journey-card{
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .journey-icon{ margin: 0 0 20px 0; }
+    .journey-number{ margin: 15px 0 0 0; }
+
+    /* --- contact (sec7) --- */
+    #sec7 .contact-container{
+        flex-direction: column;
+        width: 90%;
+        gap: 40px;
+    }
+    #sec7 .contact-info,
+    #sec7 .contact-form{ width: 100%; }
+}
+
+
+/* ---------- 768px : large phones / small tablets ---------- */
+@media (max-width: 768px) {
+
+    /* --- nav --- */
+    #sec1 nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding-bottom: 15px;
+    }
+    #sec1 nav .logo{ margin-left: 0; }
+    #sec1 nav .links{ margin-right: 0; }
+    #sec1 nav .links ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 20px;
+    }
+
+    /* --- hero --- */
+    #sec1{ height: auto; padding: 40px 0 80px; }
+    #sec1 .hero{
+        margin-left: 0;
+        margin-top: 60px;
+        text-align: center;
+        padding: 0 20px;
+    }
+    #sec1 .hero h1{ font-size: 28px; }
+    #sec1 .hero p{ font-size: 17px; }
+
+    /* --- services --- */
+    #sec3 .container div{ width: 70%; }
+
+    /* --- projects --- */
+    #sec4 .project-card{ width: 85%; }
+
+    /* --- stats --- */
+    .stat{ width: 100%; border-bottom: 1px solid #333; }
+    .stat:last-child{ border-bottom: none; }
+
+    /* --- contact form --- */
+    #sec7 .input-row{ flex-direction: column; gap: 15px; }
+    #sec7 .input-row input{ width: 100%; }
+}
+
+
+/* ---------- 480px : phones ---------- */
+@media (max-width: 480px) {
+
+    #sec1 .hero h1{ font-size: 24px; }
+    #sec1 .hero h4{ font-size: 18px; }
+    #sec1 .hero p{ font-size: 15px; }
+    #sec1 nav .links ul{ font-size: 14px; gap: 10px 14px; }
+
+    .about-img{ width: 200px; }
+    .about-content h2{ font-size: 26px; }
+    .about-caption{ font-size: 14px; }
+    .about-section-button{
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    #sec3 .container div{ width: 90%; }
+
+    #sec4 .portfolio-title h2{ font-size: 28px; }
+    #sec4 .project-card{ width: 95%; }
+    #sec4 .project-overlay p{ max-width: 100%; }
+
+    .journey-card{ padding: 30px 20px; }
+    .journey-content h3{ font-size: 20px; }
+
+    #sec7 .contact-title h2{ font-size: 28px; }
+}
