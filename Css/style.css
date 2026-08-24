@@ -25,9 +25,51 @@
 
 #sec1 nav .logo{
     margin-left: 100px;
-    color: rgba(218, 165, 32, 0.804);
-    
 }
+
+.logo-link{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    text-decoration: none;
+}
+
+.logo-mark{
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    font-weight: 700;
+
+    color: rgba(218, 165, 32, 0.804);
+
+    border: 1.5px solid rgba(218, 165, 32, 0.804);
+    border-radius: 8px;
+
+    padding: 6px 8px;
+
+    line-height: 1;
+}
+
+.logo-mark-name{
+    color: white;
+}
+
+.logo-info h1{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+
+    line-height: 1.2;
+}
+
+.logo-info h1 span{
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(218, 165, 32, 0.804);
+}
+
+
 
 #sec1 nav .links{
     margin-right: 100px;
@@ -79,6 +121,8 @@
     font-size: 20px;
     font-weight: 300;
 }
+
+
 
 
 
@@ -1125,11 +1169,11 @@
 }
 
 /* =====================================================
-   RESPONSIVE  /  ريسبونسيف
-   Breakpoints: 1024px (tablets/laptops) - 768px (tablets/large phones) - 480px (phones)
+   RESPONSIVE
    ===================================================== */
 
 /* ---------- 1024px : tablets & small laptops ---------- */
+
 @media (max-width: 1024px) {
 
     /* --- nav --- */
